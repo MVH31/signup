@@ -1,0 +1,137 @@
+* {
+    padding:0%;
+    margin:0%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position:absolute;
+    left: 0;
+    width: 40%;
+    height: 130vh;
+    background-image: url(img/halee_leaf.jpg);
+    background-size: cover;
+}
+
+#credits {
+    position:absolute;
+    width:100%;
+    text-align:center;
+    bottom:2%;
+    color: #FFFFFF;
+}
+
+.logo {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    width: 100%;
+    height: 10%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#icon {
+    width:auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+#text {
+    font-family:'Trebuchet MS', cursive;
+    font-size: 4rem;
+    color: white;
+}
+
+.main-page {
+    position:absolute;
+    right:0;
+    width: 60%;
+    height: 100vh;
+}
+
+.main-section { width: 100%; }
+
+#top-content {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: #E6FFCC;
+}
+
+#topc-text {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    font-size: 1.7em;
+    font-family:'Segoe UI', sans-serif;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+#form-content {
+    width: 100%;
+    height: 40%;
+    padding: 1.5em 1.5em 2em 1.5em;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 0 0 10px 0 lightgrey
+}
+
+#signup-form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2em;
+}
+
+.item { width: 50%; }
+
+label {
+    display: block;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    height: 80%;
+    border: solid 1px #C6ECC6;
+    border-radius: 0.5rem;
+}
+
+input:focus { outline: solid blue 1px; }
+
+.error-msg { color: red; }
+
+#bottom-content {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    padding: 1.5em 1.5em 0 1.5em;
+    font-weight: bold;
+}
+
+#submi {
+    width: 10rem;
+    height: 3rem;
+    background-color: #596D48;
+    border-radius: 0.5rem;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#submi:hover { border: solid 3px #FFF; }
+
+.footer {
+    position: absolute;
+    bottom: 3%;
+    color: #596D48;
+}
+
+.own-link { color: #596D48; }

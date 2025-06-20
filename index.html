@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div id="icon"><img style="max-width: 100%; max-height: 100%;" src="img/odin.png"></div>
+            <div id="text">ODIN</div>
+        </div>
+
+        <div id="credits">Photo by Halie West on <a style="color:white;" href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Unsplash</a></div>
+    </div>
+
+    <div class="main-page">
+        <section class="main-section" id="top-content">
+            <div id="topc-text">
+                <p>
+                    This is not a real online service! You know you need something
+                    <br>
+                    like this in your life to help you realize your deepest dreams.
+                    <br>
+                    SIGN UP <em>now</em>!!! 
+                    <br><br>
+                    You know you want to.
+                </p>
+            </div>
+        </section>
+
+        <form>
+            <section class="main-section" id="form-content">
+                <h3><em>kore, yarou ka</em></h3>
+                <div id="signup-form">
+                    <div class="item">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+
+                    <div class="item">
+                        <label class="item" for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+
+                    <div class="item">
+                        <label class="item" for="e-mail">E-Mail</label>
+                        <input type="email" id="e-mail" required>
+                    </div>
+
+                    <div class="item">
+                        <label class="item" for="phnumber">Phone Number</label>
+                        <input type="text" id="phnumber" pattern="[6789][0-9]{9}" placeholder="+91-" required>
+                        <br><span id="msg" class="error-msg"></span>
+                    </div>
+
+                    <div class="item">
+                        <label class="item" for="pass">Password</label>
+                        <input type="password" id="pass" required>
+                    </div>
+
+                    <div class="item">
+                        <label class="item" for="pass">Confirm Password</label>
+                        <input type="password" id="pass" required>
+                        <br><span id="msg" class="error-msg"></span>
+                    </div>
+
+                </div>
+            </section>
+        
+            <section class="main-section" id="bottom-content">
+                <button id="submi" type="submit">CREATE</button>
+                <br><br>
+                <p>Already have an account? <a href="#" class="login">Log In</a></p>
+
+                <div class="footer">Created by <a style="color: #596D48;" href="https://github.com/MVH31"> MVH31</a></div>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
